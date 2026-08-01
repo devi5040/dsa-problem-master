@@ -1,36 +1,212 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 DSA Pattern Master
 
-## Getting Started
+A modern **Next.js** application for tracking your Data Structures & Algorithms (DSA) practice using a simple **spaced repetition** system. Organize solved problems, monitor revision progress, and never miss your next review session.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ➕ Add new DSA problems
+- 📋 View all tracked problems
+- 🔁 Mark revisions as completed
+- 🗑️ Delete problems
+- 📅 Track next due date
+- 📈 Monitor revision progress
+- ⚡ Fast and responsive UI
+- ☁️ Supabase-backed persistence
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Database:** Supabase
+- **Data Fetching:** SWR
+- **Linting:** ESLint
+- **Formatting:** Prettier
+- **CI/CD:** GitHub Actions
+
+---
+
+## 📸 Preview
+
+> _Add screenshots or a demo GIF here._
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- npm
+- A Supabase project
+
+### Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/dsa-pattern-master.git
+cd dsa-pattern-master
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Configure environment variables
+
+Create a `.env.local` file in the project root.
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+.
+├── app/
+├── components/
+├── hooks/
+├── lib/
+├── services/
+├── types/
+├── public/
+└── .github/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Available Scripts
 
-## Deploy on Vercel
+```bash
+npm run dev       # Start development server
+npm run build     # Build production application
+npm run start     # Start production server
+npm run lint      # Run ESLint
+npm run format    # Format code using Prettier
+npm run check     # Check formatting
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🗄️ Database Schema
+
+| Column     | Type    |
+| ---------- | ------- |
+| id         | UUID    |
+| name       | TEXT    |
+| pattern    | TEXT    |
+| difficulty | TEXT    |
+| repsDone   | INTEGER |
+| solvedOn   | DATE    |
+
+---
+
+## 🔁 Revision Schedule
+
+Problems follow a simple spaced repetition schedule.
+
+| Revision | Days After Previous |
+| -------- | ------------------- |
+| 1        | 2 days              |
+| 2        | 7 days              |
+| 3        | 14 days             |
+| 4        | 28 days             |
+
+The application automatically calculates the next due date based on the current revision count.
+
+---
+
+## 🧪 Continuous Integration
+
+Every push and pull request automatically runs:
+
+- ✅ Install dependencies
+- ✅ ESLint
+- ✅ Prettier formatting checks
+- ✅ Production build
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/my-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "feat: add awesome feature"
+```
+
+4. Push your branch.
+
+```bash
+git push origin feature/my-feature
+```
+
+5. Open a Pull Request.
+
+Please use the provided Issue and Pull Request templates.
+
+---
+
+## 📌 Roadmap
+
+### ✅ Current Features
+
+- [x] Add DSA problems
+- [x] View tracked problems
+- [x] Delete problems
+- [x] Mark revisions as completed
+- [x] Automatic next due date calculation
+- [x] Revision progress tracking
+
+### 🚧 Planned Features
+
+- [ ] Edit problem details
+- [ ] Search problems
+- [ ] Filter by difficulty
+- [ ] Filter by pattern
+- [ ] Dashboard analytics
+- [ ] Dark mode
+- [ ] Authentication
+- [ ] Import / Export data
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
