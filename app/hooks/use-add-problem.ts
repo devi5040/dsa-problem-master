@@ -9,7 +9,6 @@ export const useAddProblems = () => {
     repsDone,
     solvedOn,
   }: Problem) => {
-    console.log("Inside hook");
     const data = await addService({
       name,
       difficulty,

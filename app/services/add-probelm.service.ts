@@ -8,7 +8,6 @@ export const addService = async ({
   repsDone,
   solvedOn,
 }: Problem) => {
-  console.log("Incoming services");
   const { data, error } = await supabase.from("problems").insert({
     name,
     difficulty,
@@ -16,8 +15,6 @@ export const addService = async ({
     solved_on: solvedOn,
     reps_done: Number(repsDone),
   });
-  console.log(error, "::::Error");
   if (error) throw error;
-  console.log("Outgoing services");
   return data;
 };
