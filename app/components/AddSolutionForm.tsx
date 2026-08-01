@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useAddProblems } from "../hooks/use-add-problem";
 import AddButton from "./AddButton";
 import FormInput from "./FormInput";
-// import { useGetProblems } from "../hooks/use-get-problems";
+import { useGetProblems } from "../hooks/use-get-problems";
 
 const AddSolutionForm = () => {
   const [name, setName] = useState<string>("");
@@ -13,7 +13,7 @@ const AddSolutionForm = () => {
   const [solvedOn, setSolvedOn] = useState<string>("");
 
   const { addProblemDetails } = useAddProblems();
-  // const { mutate } = useGetProblems();
+  const { mutate } = useGetProblems();
 
   const submitHandler = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ const AddSolutionForm = () => {
       repsDone: 1,
       solvedOn,
     });
-    // await mutate();
+    await mutate();
     form.reset();
   };
 
