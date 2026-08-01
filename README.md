@@ -30,12 +30,6 @@ A modern **Next.js** application for tracking your Data Structures & Algorithms 
 
 ---
 
-## 📸 Preview
-
-> _Add screenshots or a demo GIF here._
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
