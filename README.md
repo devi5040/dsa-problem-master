@@ -53,7 +53,7 @@ npm install
 
 ### Configure environment variables
 
-Create a `.env.local` file in the project root.
+Create a `.env` file in the project root.
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
