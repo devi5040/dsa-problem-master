@@ -36,7 +36,7 @@ See the application in action through the following screen recordings.
 
 ### ➕ Insert a Problem
 
-https://github.com/user-attachments/assets/<insert-problem-video-id>
+[Inserting Problem](https://github.com/user-attachments/assets/c566f9a7-8664-48d9-b9f0-f938fced97b5)
 
 **What is demonstrated:**
 
@@ -50,7 +50,7 @@ https://github.com/user-attachments/assets/<insert-problem-video-id>
 
 ### 🔄 Update a Problem (Log Revision)
 
-https://github.com/user-attachments/assets/<update-problem-video-id>
+[Update Problem](https://github.com/user-attachments/assets/1a9fca02-fb22-43ee-b959-1e10e718a9cc)
 
 **What is demonstrated:**
 
@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/<update-problem-video-id>
 
 ### 🗑️ Delete a Problem
 
-https://github.com/user-attachments/assets/<delete-problem-video-id>
+[Delete Problem](https://github.com/user-attachments/assets/37be286a-6fd0-414d-ae7d-a6816cdb9a11)
 
 **What is demonstrated:**
 
