@@ -30,6 +30,50 @@ A modern **Next.js** application for tracking your Data Structures & Algorithms 
 
 ---
 
+## 🎥 Demo
+
+See the application in action through the following screen recordings.
+
+### ➕ Insert a Problem
+
+https://github.com/user-attachments/assets/<insert-problem-video-id>
+
+**What is demonstrated:**
+
+- Adding a new DSA problem
+- Selecting difficulty
+- Assigning a pattern(If problem uses multiple pattern add them comma seperated)
+- Setting the solved date
+- Successfully adding the problem to the tracker
+
+---
+
+### 🔄 Update a Problem (Log Revision)
+
+https://github.com/user-attachments/assets/<update-problem-video-id>
+
+**What is demonstrated:**
+
+- Logging a revision for an existing problem
+- Updating the repetition count
+- Automatically calculating the next revision date
+- Progress indicator updates
+- Marking a problem as **Mastered** after the final revision
+
+---
+
+### 🗑️ Delete a Problem
+
+https://github.com/user-attachments/assets/<delete-problem-video-id>
+
+**What is demonstrated:**
+
+- Deleting an existing tracked problem
+- Removing it from the revision tracker
+- Updating the UI instantly after deletion
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
