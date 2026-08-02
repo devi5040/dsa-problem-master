@@ -55,9 +55,11 @@ const ProblemDisplayCard = ({ problem }: { problem: Problem }) => {
           <p className="text-sm font-mono text-[#a9a9a9]">
             - {Number(problem.repsDone)}/5 reps complete
           </p>
-          <p className="text-sm font-mono text-[#a9a9a9]">
-            - due on: {`${date}-${month}-${year}`}
-          </p>
+          {Number(problem.repsDone) < 5 && (
+            <p className="text-sm font-mono text-[#a9a9a9]">
+              - due on: {`${date}-${month}-${year}`}
+            </p>
+          )}
         </div>
         <div className="flex gap-1">
           {Array.from({ length: 5 }, (_, index) => (
